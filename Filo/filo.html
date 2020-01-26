@@ -1,0 +1,93 @@
+<!DOCTYPE>
+<html>
+<head>
+  <title>Homepage</title>
+  <link rel="stylesheet" type="text/css" href="../css/styleFilo.css">
+  <link rel="stylesheet" type="text/css" href="../css/background.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="../js/scripts.js"></script>
+  <script src="../js/slideshow.js"></script>
+
+
+
+</head>
+<body>
+
+  <!-- Page Grid -->
+    <div class="w3-row-padding" style="height: 100%">
+
+
+
+      <!-- COLUMNA Izquierda -->
+      <div class="w3-half" style="height: 100%;">
+      <div class="w3-card-4 color3 center" style="height: 100%; width: 95%;position: relative;">
+
+        <div class="w3-card-4 center  " style="width:100%;">
+            <img class="mySlides w3-round-large w3-animate-left" src="../resources/ancientGreece.jpg" style="width:100%">
+            
+
+
+            <script> changePhoto("mySlides") </script>
+        </div>
+        <!-- Cinta con Texto -->
+        <div style="position:relative;">
+          <!-- Profile photo -->
+
+          <div style="position:absolute;width:100%;top:-100%;  z-index: 1;">
+            <img src="../resources/Aristotle&Plato.jpg" class="myProfile center w3-display-container w3-circle w3-card-4 w3-hover-grayscale" style="width:25%;">
+            
+          </div>
+
+          <!-- ICONOS -->
+          <div style="width:100%; position:absolute; top: 15%; right: 8%;">
+            <a href="https://www.twitch.tv/j700070"><i class='fab fa-twitch iconReg w3-hover-opacity w3-padding' style='font-size:34px;color:white;z-index: 2'></i></a>
+            <a href="../index.html"><i class='fa fa-angle-double-left iconReg w3-hover-opacity w3-padding' style='font-size:34px;color:white;z-index: 2'></i></a>
+            <a href="https://www.youtube.com"><i class='fab fa-youtube iconReg w3-hover-opacity w3-padding' style='font-size:34px;color:white;z-index: 2'></i></a>
+          </div>
+
+
+          <div class="center w3-wide" style="width:100%;margin-top:-5%; ">
+            <div class="color1 w3-padding-small" style="border-radius:0.15em; text-shadow:1px 1px 0 #444;font-size:50%">
+              <h3 id="date"></h3>
+            </div>
+
+
+            <script>
+            document.getElementById("date").innerHTML = new Date().toDateString();
+            </script>
+
+          </div>
+
+          <script> changePhoto("myProfile") </script>
+        </div>
+
+      </div>
+      </div>
+
+
+
+      <!-- COLUMNA Central -->
+      <div class="color4 w3-quarter w3-padding-16 w3-padding-large " style="width: 23%; height: 100%;border-left-style: double; border-color: var(--BorderColor);">
+          
+
+        </div>
+
+
+
+
+
+
+
+
+      <!-- COLUMNA DERECHA -->
+      <div class="color4 w3-quarter w3-padding-large " style="width: 23%; height: 100%; border-left-style: double; border-color: var(--BorderColor);">
+       
+    </div>
+
+
+
+</body>
+
+</html>
