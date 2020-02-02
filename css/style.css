@@ -1,0 +1,81 @@
+:root {
+	--myBlack:#191919;;
+  }
+
+#border{
+	/*border-style: dotted; */
+}
+
+body{
+	color: aliceblue;
+	background-color: var(--myBlack);
+}
+header{
+	text-align: center;
+}
+
+.abstract{
+	flex: 1 100%;
+}
+.flex-container {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
+  }
+
+ul{
+	list-style-type: circle;	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ /* unvisited link */
+ a:link {
+	color: aliceblue;
+  }
+  
+  /* visited link */
+  a:visited {
+	color: aliceblue;
+  }
+  
+  /* mouse over link */
+  a:hover {
+	color: aliceblue;
+  }
+  
+  /* selected link */
+  a:active {
+	color: aliceblue;
+  } 
+  hr {
+	border: 0;
+	clear:both;
+	display:block;
+	width: 96%;               
+	background-color: aliceblue;
+	height: 1px;
+  }
