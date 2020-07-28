@@ -1,0 +1,264 @@
+<!DOCTYPE HTML> 
+<html> 
+    <head> 
+        <title>J700070</title>         
+        <!-- Latest compiled and minified CSS -->         
+        <link rel="stylesheet" href="https://stackedit.io/style.css" />
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"> 
+        <!-- jQuery library -->         
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>         
+        <!-- Popper JS -->         
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>         
+        <!-- Latest compiled JavaScript -->         
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>         
+        <link rel="stylesheet" href="../css/style.css"/> 
+        
+    </head>     
+    <body> 
+        <header> 
+</header>         
+        <script>
+            $(document).ready(function(){
+              $('[data-toggle="popover"]').popover();
+            });
+            </script>         
+        <div class="p-4 row text-white" id="border" data-html="false">
+            <div class="col-2" id="border"></div>             
+            <!-- SideBar -->             
+            <div class="col-1" id="border"> 
+                <a href="../index.html">Main Page</a> 
+                <hr> 
+                <a href="https://www.goodreads.com/user/show/87370928-cosa-cosa-cosa-cosa">Goodreads</a> 
+            </div>             
+            <!-- Center Column-->             
+            <div class="col-6 flex-container" id="border"> 
+                <div class="flex-container" id="border"> 
+                    <!-- Abstract -->                     
+                    <div class="container pghelper-bs4-grid-parent-relative"> 
+                            
+                        <h1 id="portfolio-backtesting">Portfolio Backtesting</h1>
+                        <br>
+                        <h3 id="portfolio-1">Portfolio 1:</h3>
+                        <p>Este portfolio intenta conseguir empresas con los ratios que yo considero más importantes de rentabilidad sin dejar de lado la situación financiera.<br>
+                        <strong>Fecha comienzo:</strong> 01/01/2016<br>
+                        <strong>Fecha finalización:</strong> 28/07/2020<br>
+                        <strong>Número de stocks deseado:</strong> 100, ordenados  por ranking de rentabilidad en <a href="http://Gurufocus.com">Gurufocus.com</a> . Debido a las estrictas restricciones de este portfolio solo encontraremos alrededor de 38 empresas en 2016 e irá aumentando a lo largo de los años.<br>
+                        <strong>Localización:</strong> EEUU<br>
+                        <strong>Inversión inicial:</strong> $1000</p>
+                        <p><strong>Criterios a cumplir:</strong></p>
+                        <ul>
+                        <li>Financial Strength &gt;= 5 [Gurufocus Ranking]</li>
+                        <li>Profitability Rank &gt;= 5 [Gurufocus Ranking]</li>
+                        <li>Predictability Rank &gt;= 2.5 [Gurufocus Ranking]</li>
+                        <li>Piotroski F-Score &gt;= 5</li>
+                        <li>Altman Z-Score &gt;= 1.81</li>
+                        <li>ROE (10y median) &gt;= 10%</li>
+                        <li>ROIC (10y median) &gt;= 10%</li>
+                        <li>Forward Rate of Return (Yacktman) &gt;= 2%</li>
+                        <li>Operating Margin (10y median) &gt;= 10%</li>
+                        <li>Net Margin (10y median) &gt;= 10%</li>
+                        <li>FCF Growth Rate (5 year) &gt; 0%</li>
+                        </ul>
+                        <p><em>Alpha calculada respecto del SP500</em></p>
+                        <p><strong>6 month rebalance</strong></p>
+                        
+                        <img src="1port6monthsGraph.png"> 
+                        <br>
+                        <br>
+
+                        <table>
+                        <thead>
+                        <tr>
+                        <th>Año</th>
+                        <th>PORTFOLIO</th>
+                        <th>SP500 ETF</th>
+                        <th>DJIA ETF</th>
+                        <th>NASDAQ ETF</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                        <td>2016</td>
+                        <td>14.25</td>
+                        <td>11.20</td>
+                        <td>18.21</td>
+                        <td>9.40</td>
+                        </tr>
+                        <tr>
+                        <td>2017</td>
+                        <td>28.12</td>
+                        <td>19.38</td>
+                        <td>28.08</td>
+                        <td>32.66</td>
+                        </tr>
+                        <tr>
+                        <td>2018</td>
+                        <td>-3.49</td>
+                        <td>-6.33</td>
+                        <td>-3.74</td>
+                        <td>-0.96</td>
+                        </tr>
+                        <tr>
+                        <td>2019</td>
+                        <td>33.51</td>
+                        <td>28.79</td>
+                        <td>25.03</td>
+                        <td>37.83</td>
+                        </tr>
+                        <tr>
+                        <td>2020</td>
+                        <td>11.96</td>
+                        <td>0.42</td>
+                        <td>-5.55</td>
+                        <td>22.35</td>
+                        </tr>
+                        <tr>
+                        <td>Overall</td>
+                        <td>111.18</td>
+                        <td>60.79</td>
+                        <td>72.09</td>
+                        <td>142.38</td>
+                        </tr>
+                        </tbody>
+                        </table>
+                        <br>
+                        <p>Valor final de la inversión inicial: $2111.77<br>
+                        Alpha: 50,39</p>
+                        <p><strong>12 month rebalance</strong></p>
+                        
+                        <table>
+                        <thead>
+                        <tr>
+                        <th>Año</th>
+                        <th>PORTFOLIO</th>
+                        <th>SP500 ETF</th>
+                        <th>DJIA ETF</th>
+                        <th>NASDAQ ETF</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                        <td>2016</td>
+                        <td>12.92</td>
+                        <td>11.20</td>
+                        <td>18.21</td>
+                        <td>9.40</td>
+                        </tr>
+                        <tr>
+                        <td>2017</td>
+                        <td>29.62</td>
+                        <td>19.38</td>
+                        <td>28.08</td>
+                        <td>32.66</td>
+                        </tr>
+                        <tr>
+                        <td>2018</td>
+                        <td>-3.77</td>
+                        <td>-6.33</td>
+                        <td>-3.74</td>
+                        <td>-0.96</td>
+                        </tr>
+                        <tr>
+                        <td>2019</td>
+                        <td>34.10</td>
+                        <td>28.79</td>
+                        <td>25.03</td>
+                        <td>37.83</td>
+                        </tr>
+                        <tr>
+                        <td>2020</td>
+                        <td>11.90</td>
+                        <td>0.42</td>
+                        <td>-5.55</td>
+                        <td>22.35</td>
+                        </tr>
+                        <tr>
+                        <td>Overall</td>
+                        <td>111.30</td>
+                        <td>60.79</td>
+                        <td>72.09</td>
+                        <td>142.38</td>
+                        </tr>
+                        </tbody>
+                        </table>
+                        <br>
+                        <p>Valor final de la inversión inicial: $2113.01<br>
+                        Alpha: 50,51</p>
+                        <p><strong>No rebalance</strong></p>
+                        
+                        <table>
+                        <thead>
+                        <tr>
+                        <th>Año</th>
+                        <th>PORTFOLIO</th>
+                        <th>SP500 ETF</th>
+                        <th>DJIA ETF</th>
+                        <th>NASDAQ ETF</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                        <td>2016</td>
+                        <td>12.92</td>
+                        <td>11.20</td>
+                        <td>18.21</td>
+                        <td>9.40</td>
+                        </tr>
+                        <tr>
+                        <td>2017</td>
+                        <td>29.38</td>
+                        <td>19.38</td>
+                        <td>28.08</td>
+                        <td>32.66</td>
+                        </tr>
+                        <tr>
+                        <td>2018</td>
+                        <td>-3.04</td>
+                        <td>-6.33</td>
+                        <td>-3.74</td>
+                        <td>-0.96</td>
+                        </tr>
+                        <tr>
+                        <td>2019</td>
+                        <td>31.33</td>
+                        <td>28.79</td>
+                        <td>25.03</td>
+                        <td>37.83</td>
+                        </tr>
+                        <tr>
+                        <td>2020</td>
+                        <td>10.03</td>
+                        <td>0.42</td>
+                        <td>-5.55</td>
+                        <td>22.35</td>
+                        </tr>
+                        <tr>
+                        <td>Overall</td>
+                        <td>104.66</td>
+                        <td>60.79</td>
+                        <td>72.09</td>
+                        <td>142.38</td>
+                        </tr>
+                        </tbody>
+                        </table>
+                        <br>
+                        <p>Valor final de la inversión inicial: $2046.56<br>
+                        Alpha: 43,87</p>
+                        <p>Los resultados del portfolio son satisfactorios. En todos los backtest consigue batir al SP500 y al DJIA, año tras año y de manera continuada. Si bien no consigue alcanzar las rentabilidades del Nasdaq (mayormente ponderado por sector tecnología, servicios de consumidor y salud), consigue rentabilidades muy atractivas manteniendo una mayor diversificación.</p>
+                        <img src="1portbreakdown.png">  
+                        <br><br>
+                        <img src="nasdaqbreakdown.png"> 
+                        <br><br>
+                        <p>En esta primera imagen vemos la distribución por sectores de un portfolio contruido manualmente con los mismos criterios que siguiendo las mismas normas de backtesting alcanza una rentabilidad similar (112%). Como vemos nuestro portfolio se encuentra mejor diversificado que el Nasdaq (segunda imagen). Otro hecho relevante que me llama la atención es el poco cambio que supone para la rentabilidad del porfolio no hacer rebalanceo. Esto puede sugerir que las empresas que entran al portfolio son capaces de tener buen rendimiento a medio plazo sin necesidad de cambiarlas por otras.</p>
+                        <p>Portfolio construido manualmente siguiendo los criterios arriba especificados:</p>
+                        <blockquote>
+                        <p>TREX, CNI, JKHY, ROL, EXPO, MKC, CLX, INTU, PAYX, BABA, CHKP, INTC, PANDY, ATRI, EL, SICRF, CHH, NVO, EBIX, MASI, CHE, AMGN, DEO, MA, CHD, CACC, FDS, MSFT, CSCO, LRLCF, RTMVY, MSCI, AHCHY, KKKUF, WMT, MORN, AAPL, SWMAY, BIIB, TJX, WAT, SWKS, EXPD, VRSK, MCO, SPXCF, V, MCD, GWW, HUBB, ANSS, UG, GNTX, HESAY, NSP, TSM, SBUX, FFIV, HESAF, NKE, AME, CTSH, TSCO, AMADF, TROW, FAST, CRUS, ROST, SHW, BLL,</p>
+                        </blockquote>
+                        </div>
+            
+                    </div>                     
+                </div>                 
+                <div class="col-3" id="border"></div>                 
+            </div>
+    </body>     
+</html>
