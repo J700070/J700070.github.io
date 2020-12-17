@@ -2,15 +2,14 @@
 	--myBlack:#191919;;
   }
 
-#border{
-	/*border-style: dotted; */
-}
 
 body{
 	color: aliceblue;
 	background-color: var(--myBlack);
 }
-
+p{
+	text-indent:40px
+}
 header{
 	text-align: center;
 }
@@ -18,7 +17,9 @@ header{
 .abstract{
 	flex: 1 100%;
 }
-
+.title{
+	
+}
 blockquote {
 	color: aliceblue;
 	border-left: 5px solid aliceblue;
