@@ -17,9 +17,7 @@ header{
 .abstract{
 	flex: 1 100%;
 }
-.title{
-	
-}
+
 blockquote {
 	color: aliceblue;
 	border-left: 5px solid aliceblue;
