@@ -7,9 +7,13 @@ body{
 	color: aliceblue;
 	background-color: var(--myBlack);
 }
-p{
-	text-indent:40px
+.noindent{
+	text-indent: 0px;
 }
+p{
+	text-indent: 40px;
+}
+
 header{
 	text-align: center;
 }
