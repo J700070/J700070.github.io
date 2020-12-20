@@ -33,14 +33,14 @@
                             
                         <h1 id="portfolio-backtesting" class="text-center">Portfolio Backtesting</h1>
                         <br>
-                        <h3 class="text-right border-bottom">Portfolio 1</h3>
-                        <p class="noindent"> Este primer portfolio intenta buscar empresas altamente rentables con una buena posición financiera. <br>
+                        <h3 class="text-right border-bottom">Riesgo-recompensa balanceado</h3>
+                        <p class="noindent"> Este primer portfolio intenta buscar empresas altamente rentables con una buena posición financiera. Este portfolio se centra en encontrar empresas de calidad y seguras con alta predictabilidad. Es importante notar que no tenemos en cuenta el precio y que hay elementos "sobrejuzgados", es decir, que los tenemos en cuenta más de una vez. Por ejemplo, tanto el ROE como el ROIC se contemplan en "Profitability Rank". ¿Por qué no los eliminamos? Esto se debe a que para un "Profitability Rank" alto no es necesario cumplir con un alto ROE o un alto ROIC, en todo caso lo interesante sería eliminar "Profitability Rank". Este portfolio lo desarrollé pocos meses después de empezar a invertir por lo que es muy mejorable, en un apartado posterior estudiaremos posibilidades de mejora.<br><br>
                         <strong>Fecha comienzo:</strong> 01/01/2016<br>
                         <strong>Fecha finalización:</strong> 28/07/2020<br>
                         <strong>Número de stocks deseado:</strong> 100, ordenados  por ranking de rentabilidad en <a href="http://Gurufocus.com">Gurufocus.com</a> . Debido a las estrictas restricciones de este portfolio solo encontraremos alrededor de 38 empresas en 2016 e irá aumentando a lo largo de los años.<br>
                         <strong>Localización:</strong> EEUU<br>
                         <strong>Inversión inicial:</strong> $1000</p>
-                        <p><strong>Criterios a cumplir:</strong></p>
+                        <p class="noindent"><strong>Criterios a cumplir:</strong></p>
                         <ul>
                         <li>Financial Strength &gt;= 5 [Gurufocus Ranking]</li>
                         <li>Profitability Rank &gt;= 5 [Gurufocus Ranking]</li>
@@ -54,198 +54,228 @@
                         <li>Net Margin (10y median) &gt;= 10%</li>
                         <li>FCF Growth Rate (5 year) &gt; 0%</li>
                         </ul>
-                        <p><em>Alpha calculada respecto del SP500</em></p>
-                        <p><strong>6 month rebalance</strong></p>
+                        <p class="text-center"><em>Alfa calculada respecto del SP500</em></p>
+                        <h3 class="text-right border-bottom">Rebalanceo de 6 meses</h3>
                         
                         <img src="1port6monthsGraph.png"> 
                         <br>
                         <br>
-
-                        <table>
-                        <thead>
-                        <tr>
-                        <th>Año</th>
-                        <th>PORTFOLIO</th>
-                        <th>SP500 ETF</th>
-                        <th>DJIA ETF</th>
-                        <th>NASDAQ ETF</th>
-                        </tr>
-                        </thead>
-                        <tbody>
-                        <tr>
-                        <td>2016</td>
-                        <td>14.25</td>
-                        <td>11.20</td>
-                        <td>18.21</td>
-                        <td>9.40</td>
-                        </tr>
-                        <tr>
-                        <td>2017</td>
-                        <td>28.12</td>
-                        <td>19.38</td>
-                        <td>28.08</td>
-                        <td>32.66</td>
-                        </tr>
-                        <tr>
-                        <td>2018</td>
-                        <td>-3.49</td>
-                        <td>-6.33</td>
-                        <td>-3.74</td>
-                        <td>-0.96</td>
-                        </tr>
-                        <tr>
-                        <td>2019</td>
-                        <td>33.51</td>
-                        <td>28.79</td>
-                        <td>25.03</td>
-                        <td>37.83</td>
-                        </tr>
-                        <tr>
-                        <td>2020</td>
-                        <td>11.96</td>
-                        <td>0.42</td>
-                        <td>-5.55</td>
-                        <td>22.35</td>
-                        </tr>
-                        <tr>
-                        <td>Overall</td>
-                        <td>111.18</td>
-                        <td>60.79</td>
-                        <td>72.09</td>
-                        <td>142.38</td>
-                        </tr>
-                        </tbody>
-                        </table>
-                        <br>
-                        <p>Valor final de la inversión inicial: $2111.77<br>
-                        Alpha: 50,39</p>
-                        <p><strong>12 month rebalance</strong></p>
+                        <div>
+                            <table class="float-left text-center">
+                            <thead>
+                            <tr>
+                            <th>Año</th>
+                            <th>PORTFOLIO</th>
+                            <th>SP500 ETF</th>
+                            <th>DJIA ETF</th>
+                            <th>NASDAQ ETF</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                            <td>2016</td>
+                            <td>14.25</td>
+                            <td>11.20</td>
+                            <td>18.21</td>
+                            <td>9.40</td>
+                            </tr>
+                            <tr>
+                            <td>2017</td>
+                            <td>28.12</td>
+                            <td>19.38</td>
+                            <td>28.08</td>
+                            <td>32.66</td>
+                            </tr>
+                            <tr>
+                            <td>2018</td>
+                            <td>-3.49</td>
+                            <td>-6.33</td>
+                            <td>-3.74</td>
+                            <td>-0.96</td>
+                            </tr>
+                            <tr>
+                            <td>2019</td>
+                            <td>33.51</td>
+                            <td>28.79</td>
+                            <td>25.03</td>
+                            <td>37.83</td>
+                            </tr>
+                            <tr>
+                            <td>2020</td>
+                            <td>11.96</td>
+                            <td>0.42</td>
+                            <td>-5.55</td>
+                            <td>22.35</td>
+                            </tr>
+                            <tr>
+                            <td>Overall</td>
+                            <td>111.18</td>
+                            <td>60.79</td>
+                            <td>72.09</td>
+                            <td>142.38</td>
+                            </tr>
+                            </tbody>
+                            </table>
+                            <br>
+                            <div class="float-right">
+                                <p class="noindent"><strong>Valor final de la inversión inicial:</strong> $2111.77<br>
+                                <strong>Alfa:</strong> 50,39</p>
+                            </div>
+                        </div>  
+                        <div style="clear:both;"></div>
+                        <div>
+                        <h3 class="text-right border-bottom">Rebalanceo de 12 meses</h3>
                         
-                        <table>
-                        <thead>
-                        <tr>
-                        <th>Año</th>
-                        <th>PORTFOLIO</th>
-                        <th>SP500 ETF</th>
-                        <th>DJIA ETF</th>
-                        <th>NASDAQ ETF</th>
-                        </tr>
-                        </thead>
-                        <tbody>
-                        <tr>
-                        <td>2016</td>
-                        <td>12.92</td>
-                        <td>11.20</td>
-                        <td>18.21</td>
-                        <td>9.40</td>
-                        </tr>
-                        <tr>
-                        <td>2017</td>
-                        <td>29.62</td>
-                        <td>19.38</td>
-                        <td>28.08</td>
-                        <td>32.66</td>
-                        </tr>
-                        <tr>
-                        <td>2018</td>
-                        <td>-3.77</td>
-                        <td>-6.33</td>
-                        <td>-3.74</td>
-                        <td>-0.96</td>
-                        </tr>
-                        <tr>
-                        <td>2019</td>
-                        <td>34.10</td>
-                        <td>28.79</td>
-                        <td>25.03</td>
-                        <td>37.83</td>
-                        </tr>
-                        <tr>
-                        <td>2020</td>
-                        <td>11.90</td>
-                        <td>0.42</td>
-                        <td>-5.55</td>
-                        <td>22.35</td>
-                        </tr>
-                        <tr>
-                        <td>Overall</td>
-                        <td>111.30</td>
-                        <td>60.79</td>
-                        <td>72.09</td>
-                        <td>142.38</td>
-                        </tr>
-                        </tbody>
-                        </table>
+                            <table  class="float-left text-center">
+                            <thead>
+                            <tr>
+                            <th>Año</th>
+                            <th>PORTFOLIO</th>
+                            <th>SP500 ETF</th>
+                            <th>DJIA ETF</th>
+                            <th>NASDAQ ETF</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                            <td>2016</td>
+                            <td>12.92</td>
+                            <td>11.20</td>
+                            <td>18.21</td>
+                            <td>9.40</td>
+                            </tr>
+                            <tr>
+                            <td>2017</td>
+                            <td>29.62</td>
+                            <td>19.38</td>
+                            <td>28.08</td>
+                            <td>32.66</td>
+                            </tr>
+                            <tr>
+                            <td>2018</td>
+                            <td>-3.77</td>
+                            <td>-6.33</td>
+                            <td>-3.74</td>
+                            <td>-0.96</td>
+                            </tr>
+                            <tr>
+                            <td>2019</td>
+                            <td>34.10</td>
+                            <td>28.79</td>
+                            <td>25.03</td>
+                            <td>37.83</td>
+                            </tr>
+                            <tr>
+                            <td>2020</td>
+                            <td>11.90</td>
+                            <td>0.42</td>
+                            <td>-5.55</td>
+                            <td>22.35</td>
+                            </tr>
+                            <tr>
+                            <td>Overall</td>
+                            <td>111.30</td>
+                            <td>60.79</td>
+                            <td>72.09</td>
+                            <td>142.38</td>
+                            </tr>
+                            </tbody>
+                            </table>
+                            <br>
+                            <div class="float-right">
+                            <p class="noindent"><strong>Valor final de la inversión inicial:</strong> $2113.01<br>
+                            <strong>Alfa:</strong> 50,51</p>
+                            </div>
+                        </div>
+                        <div style="clear:both;"></div>
+                        <div>
+                            <h3 class="text-right border-bottom">Sin rebalanceo</h3>
+                            
+                            <table class="float-left text-center">
+                            <thead>
+                            <tr>
+                            <th>Año</th>
+                            <th>PORTFOLIO</th>
+                            <th>SP500 ETF</th>
+                            <th>DJIA ETF</th>
+                            <th>NASDAQ ETF</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                            <td>2016</td>
+                            <td>12.92</td>
+                            <td>11.20</td>
+                            <td>18.21</td>
+                            <td>9.40</td>
+                            </tr>
+                            <tr>
+                            <td>2017</td>
+                            <td>29.38</td>
+                            <td>19.38</td>
+                            <td>28.08</td>
+                            <td>32.66</td>
+                            </tr>
+                            <tr>
+                            <td>2018</td>
+                            <td>-3.04</td>
+                            <td>-6.33</td>
+                            <td>-3.74</td>
+                            <td>-0.96</td>
+                            </tr>
+                            <tr>
+                            <td>2019</td>
+                            <td>31.33</td>
+                            <td>28.79</td>
+                            <td>25.03</td>
+                            <td>37.83</td>
+                            </tr>
+                            <tr>
+                            <td>2020</td>
+                            <td>10.03</td>
+                            <td>0.42</td>
+                            <td>-5.55</td>
+                            <td>22.35</td>
+                            </tr>
+                            <tr>
+                            <td>Overall</td>
+                            <td>104.66</td>
+                            <td>60.79</td>
+                            <td>72.09</td>
+                            <td>142.38</td>
+                            </tr>
+                            </tbody>
+                            </table>
+                            <br>
+                            <div class="float-right">
+                                <p class="noindent"><strong>Valor final de la inversión inicial:</strong> $2046.56<br>
+                                <strong>Alfa:</strong> 43,87</p>
+                            </div>
+                        </div>
+                        <div style="clear:both;"></div> <br>
+                        <p>Los resultados a primera vista parecen satisfactorios, consiguiendo batir tanto al SP500 como al DJIA. Si bien no consigue batir al Nasdaq, consigue rentabilidades similares estando mucho más diversificado y a mi juicio, con menor riesgo.</p>
                         <br>
-                        <p>Valor final de la inversión inicial: $2113.01<br>
-                        Alpha: 50,51</p>
-                        <p><strong>No rebalance</strong></p>
-                        
-                        <table>
-                        <thead>
-                        <tr>
-                        <th>Año</th>
-                        <th>PORTFOLIO</th>
-                        <th>SP500 ETF</th>
-                        <th>DJIA ETF</th>
-                        <th>NASDAQ ETF</th>
-                        </tr>
-                        </thead>
-                        <tbody>
-                        <tr>
-                        <td>2016</td>
-                        <td>12.92</td>
-                        <td>11.20</td>
-                        <td>18.21</td>
-                        <td>9.40</td>
-                        </tr>
-                        <tr>
-                        <td>2017</td>
-                        <td>29.38</td>
-                        <td>19.38</td>
-                        <td>28.08</td>
-                        <td>32.66</td>
-                        </tr>
-                        <tr>
-                        <td>2018</td>
-                        <td>-3.04</td>
-                        <td>-6.33</td>
-                        <td>-3.74</td>
-                        <td>-0.96</td>
-                        </tr>
-                        <tr>
-                        <td>2019</td>
-                        <td>31.33</td>
-                        <td>28.79</td>
-                        <td>25.03</td>
-                        <td>37.83</td>
-                        </tr>
-                        <tr>
-                        <td>2020</td>
-                        <td>10.03</td>
-                        <td>0.42</td>
-                        <td>-5.55</td>
-                        <td>22.35</td>
-                        </tr>
-                        <tr>
-                        <td>Overall</td>
-                        <td>104.66</td>
-                        <td>60.79</td>
-                        <td>72.09</td>
-                        <td>142.38</td>
-                        </tr>
-                        </tbody>
-                        </table>
+                        <h3 class="text-right border-bottom">Diversificación del portfolio</h3>
                         <br>
-                        <p>Valor final de la inversión inicial: $2046.56<br>
-                        Alpha: 43,87</p>
-                        <p>Los resultados del portfolio son satisfactorios. En todos los backtest consigue batir al SP500 y al DJIA, año tras año y de manera continuada. Si bien no consigue alcanzar las rentabilidades del Nasdaq (mayormente ponderado por sector tecnología, servicios de consumidor y salud), consigue rentabilidades muy atractivas manteniendo una mayor diversificación.</p>
+                        <div class="text-center">
+                            <p> Diversificación por sectores del portfolio</p>
                         <img src="1portbreakdown.png">  
                         <br><br>
+                        <p> Diversificación por sectores del Nasdaq</p>
                         <img src="nasdaqbreakdown.png"> 
+                        </div>
+                        <br>
+                        <p> Como ya habíamos adelantado el nasdaq se encuentra menos diversificado. Se concentra principalmente en el sector tecnológico y de salud. Debido a esta concentración es posible que los asombrosos rendimientos del Nasdaq en los últimos años sea algo pasajero atribuible al alza del sector tecnológico.</p>
+                        <br>
+                        <h3 class="text-right border-bottom">Críticas y aspectos de mejora</h3>
+                        <p> Los criterios para este portfolio los concebí a los pocos meses de empezar a invertir, cuando apenas había leído un par de libros de inversión. Es por este motivo que, casi un año más tarde y por lo menos una decena de libros más, veo una gran cantidad de fallas en el portfolio.</p>
+                        <p> El primero de todos los problemas es el pequeño espacio de tiempo donde se comprueba este portfolio, siendo especialmente lamentable que no haya sido testeado en situaciones de crisis extremas (como el 2008). No tenemos muchos datos de como se comportaría el portfolio antes un  evento 3-sigma, de hecho no tenemos información de como se comportaría ante casi ninguna situación. Esto se debe a que las herramientas gratuitas de backtestiing ofrecen servicios muy limitados. La solución a este problema sería utilizar una herramienta de pago para testear el portfolio durante los últimos 100 años.</p>
+                        <p> El segundo problema ya ha sido mencionado en la introducción, hay ratios que ponderamos varias veces, dándoles mayor peso al que se merecen. Este error ocurre por el uso de ratios propios de la web donde se hace el backtesting, ratios como "Financial Strength (FS)" utilizan otros ratios que también evaluamos. Este problema se soluciona eliminando los ratios de Gurufocus y sustituyendolos por ratios equivalentes pero sin repetir los que ya evaluamos. Cabe preguntarse entonces por qué opté por usar esos ratios en un principio ( a parte de por mi inexperiencia ). La respuesta más sencilla es porque eran diferentes. Entonces ya era consciente de que haciendo lo que hace todo el mundo no se pueden conseguir rendimientos mejores a los del mercado, por lo que opté por usar ratios que no fueran comunmente usado en un intento por conseguir alfa.</p>
+                        <p> La tercera crítica viene de la mano de la psicología. El ser humano tiende a pensar que cuanto más complejo sea el algoritmo y más cantidad de variables tenemos en cuenta, mayor será el rendimiento de nuestra cartera. Esto ha sido demostrado falso en varias ocasiones, pues el ser humano es imperfecto y la inclusión de más variables y más complejidad da lugar a mayor número de errores y equivocaciones. Es por eso que es mejor el desarrollo de un algortimo simple que tenga en cuenta solo lo fundamental, de esta manera es como se consiguen mejores resultados. Como ya hemos podido apreciar este portfolio contiene una gran cantidad de criterios y no precisamente simples y directos. Es por eso que para mejorar los criterios debería hacerse una simplicación radical de los mismos y elminar todos aquellos que no sean fundamentales. </p>
+                        <p> La cuarta y última de las críticas que aquí expongo es la mala selección de los criterios, aunque no desde el enfoque expuesto en el punto anterior que criticaba su cantidad y complejidad. Aquí cabe criticar la falta de datos "menos financieros" para intentar representar la parte cualitativa de la empresa. Llegados a este punto creo que la parte intangible de una empresa suele ser uno de sus mejores activos, la imagen de marca, la calidad del equipo directivo... Todos estos factores si bien se reflejan a menudo en las cuentas financieras no siempre se ven en los primeros años. Por este motivo deberíamos intentar cuantificar esta calidad con aproximaciones diferentes, este tipo de datos deberían obtenerse idealmente por métodos como la "rumorología" expuesta por Philip Fisher, sin embargo me temo que esto es casi imposible para todas las empresas. La solución pasa entonces por aproximaciones intermedias como el uso de páginas como Glassdoor donde podemos encontrar opinión de los CEO's por parte de los empleados y otras medidas de la calidad interna de la empresa. Siguiendo la misma línea de crítica, también cabe criticar la falta de criterios de valoración. Esto es un error común entre los inversores y se debe a un sesgo heurístico por el cual el inversor intenta responder a la pregunta "¿Debería invertir en esta empresa?" y su cerebro responde a la pregunta "¿Es buena esta empresa? o ¿Me gusta esta emporesa?". Debemos recordar que somos inversores, no buscamos buenas empresas, buscamos buenas inversiones (aunque estas dos muchas veces van de la mano). Es importante entonces pagar un precio adecuado por cada inversión y debemos tener en cuenta su valoración, por esto deberíamos haber incluido algun ratio como el EV/EBITDA.</p>
+                        <p> Desde luego hay infinidad de errores y aspectos de mejora que me dejo fuera, sin embargo creo que aquí he expuesto lo principal. El hecho de que pueda criticar tan duramente un trabajo de hace unos meses me parece que refleja lo mucho que he aprendido y mejorado en este tiempo, si fuera a rehacer el un portfolio para backtesting a sería muy diferente.</p>
                         <br><br>
-                        <p>En esta primera imagen vemos la distribución por sectores de un portfolio contruido manualmente con los mismos criterios que siguiendo las mismas normas de backtesting alcanza una rentabilidad similar (112%). Como vemos nuestro portfolio se encuentra mejor diversificado que el Nasdaq (segunda imagen). Otro hecho relevante que me llama la atención es el poco cambio que supone para la rentabilidad del porfolio no hacer rebalanceo. Esto puede sugerir que las empresas que entran al portfolio son capaces de tener buen rendimiento a medio plazo sin necesidad de cambiarlas por otras.</p>
-                        <p>Portfolio construido manualmente siguiendo los criterios arriba especificados:</p>
+                        <p class="noindent">Portfolio construido manualmente siguiendo los criterios arriba especificados:</p>
                         <blockquote>
                         <p>TREX, CNI, JKHY, ROL, EXPO, MKC, CLX, INTU, PAYX, BABA, CHKP, INTC, PANDY, ATRI, EL, SICRF, CHH, NVO, EBIX, MASI, CHE, AMGN, DEO, MA, CHD, CACC, FDS, MSFT, CSCO, LRLCF, RTMVY, MSCI, AHCHY, KKKUF, WMT, MORN, AAPL, SWMAY, BIIB, TJX, WAT, SWKS, EXPD, VRSK, MCO, SPXCF, V, MCD, GWW, HUBB, ANSS, UG, GNTX, HESAY, NSP, TSM, SBUX, FFIV, HESAF, NKE, AME, CTSH, TSCO, AMADF, TROW, FAST, CRUS, ROST, SHW, BLL,</p>
                         </blockquote>
